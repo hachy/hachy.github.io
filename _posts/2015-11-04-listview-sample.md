@@ -42,4 +42,4 @@ tags: android
 
 結果はこんな感じ。
 
-![listview](/images/2015/11/listview1.png "listview")
+![listview](/images/listview1.png "listview")
