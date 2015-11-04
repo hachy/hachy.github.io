@@ -22,7 +22,38 @@ tags: android
 
 `MainActivity.java` ではデータをArrayAdapter経由でListViewに表示します。
 
-{% gist 84ff01073eebdd4f7092 %}
+{% highlight java %}
+package com.example.listviewsample;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+
+public class MainActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        ArrayList<String> items = new ArrayList<>();
+        for (int i = 0; i < 20; i++) {
+            items.add("item " + i);
+        }
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(MainActivity.this, android.R.layout.simple_list_item_1, items);
+
+        ListView listView = (ListView) findViewById(R.id.list_view);
+        listView.setAdapter(adapter);
+    }
+}
+{% endhighlight %}
 
 `android.R.layout.simple_list_item_1` はAndroid側で用意されているレイアウトファイルで以下のように定義されている。ちなみにAndroidStudioでは`Shift`を２回押すと検索することができる。
 
