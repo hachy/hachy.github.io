@@ -7,4 +7,8 @@ twitter_username: hachy01
 github_username:  hachy
 
 # Build settings
-markdown: kramdown
+markdown: redcarpet
+redcarpet:
+  extensions: []
+kramdown:
+  input: GFM

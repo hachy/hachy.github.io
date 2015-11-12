@@ -6,7 +6,7 @@ tags: android
 ---
 `layout/activity_main.xml`
 
-{% highlight xml %}
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -18,11 +18,11 @@ tags: android
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 </LinearLayout>
-{% endhighlight %}
+```
 
 `MainActivity.java` ではデータをArrayAdapter経由でListViewに表示します。
 
-{% highlight java %}
+```java
 package com.example.listviewsample;
 
 import android.os.Bundle;
@@ -53,12 +53,13 @@ public class MainActivity extends AppCompatActivity {
         listView.setAdapter(adapter);
     }
 }
-{% endhighlight %}
+```
 
 `android.R.layout.simple_list_item_1` はAndroid側で用意されているレイアウトファイルで以下のように定義されている。ちなみにAndroidStudioでは`Shift`を２回押すと検索することができる。
 
 `simple_list_item_1.xml`
-{% highlight xml %}
+
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@android:id/text1"
@@ -69,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
     android:paddingStart="?android:attr/listPreferredItemPaddingStart"
     android:paddingEnd="?android:attr/listPreferredItemPaddingEnd"
     android:minHeight="?android:attr/listPreferredItemHeightSmall" />
-{% endhighlight %}
+```
 
 結果はこんな感じ。
 
