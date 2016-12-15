@@ -1,25 +1,42 @@
 <footer class="site-footer">
 
   <div class="wrapper">
-    <ul class="social-media-list">
+
+    <div class="avatar">
       {% if site.github_username %}
-      <li>
-        <a href="https://github.com/{{ site.github_username }}">
-          <span>GitHub</span>
-        </a>
-      </li>
+      {% avatar {{site.github_username}} size=50 %}
       {% endif %}
+    </div>
 
-      {% if site.twitter_username %}
-      <li>
-        <a href="https://twitter.com/{{ site.twitter_username }}">
-          <span>Twitter</span>
-        </a>
-      </li>
-      {% endif %}
-    </ul>
+    <div class="profile">
+      <div class="author">
+        {% if site.author %}
+        {{ site.author | escape }}
+        {% endif %}
+      </div>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      <ul class="social-media-list">
+        {% if site.github_username %}
+        <li>
+          <a href="https://github.com/{{ site.github_username }}">
+            <span>GitHub</span>
+          </a>
+        </li>
+        {% endif %}
+
+        {% if site.twitter_username %}
+        <li>
+          <a href="https://twitter.com/{{ site.twitter_username }}">
+            <span>Twitter</span>
+          </a>
+        </li>
+        {% endif %}
+      </ul>
+
+      <div class="description">
+        <p>{{ site.description | escape }}</p>
+      </div>
+    </div>
 
   </div>
 

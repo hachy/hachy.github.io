@@ -1,7 +1,16 @@
 title: Hachy
+author: hachy
 description: > # this means to ignore newlines until "baseurl:"
-  hachy's blog
+  Android/Ruby on Rails
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://hachy.github.io" # the base hostname & protocol for your site
 twitter_username: hachy01
 github_username:  hachy
+
+gems:
+  - jekyll-avatar
+  - jekyll-feed
+  - jekyll-mentions
+  - jekyll-redirect-from
+  - jekyll-sitemap
+  - jemoji

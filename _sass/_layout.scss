@@ -94,13 +94,30 @@ header > .wrapper a {
 }
 
 .site-footer {
-  font-size: 14px;
   border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
+
+  > .wrapper {
+    display: flex;
+  }
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+.profile {
+  margin-left: 13px;
+}
+
+.author {
+  font-weight: bold;
 }
 
 .social-media-list {
+  color: $grey-color;
   display: flex;
+  font-size: 13px;
   list-style: none;
   margin-left: 0;
   margin-bottom: 0;
@@ -108,6 +125,11 @@ header > .wrapper a {
   li {
     padding-right: 8px;
   }
+}
+
+.description {
+  color: $grey-color;
+  font-size: 13px;
 }
 
 /**
