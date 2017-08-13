@@ -7,7 +7,7 @@ url: "https://hachy.github.io" # the base hostname & protocol for your site
 twitter_username: hachy01
 github_username:  hachy
 
-gems:
+plugins:
   - jekyll-avatar
   - jekyll-feed
   - jekyll-mentions
