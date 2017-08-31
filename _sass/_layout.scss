@@ -210,6 +210,33 @@ header > .wrapper a {
     // }
 }
 
+.page-navigation {
+  display: flex;
+  font-size: 14px;
+  justify-content: space-between;
+  width: auto;
+
+  a {
+    color: $grey-color-dark;
+    display: block;
+    margin: 2em 0 1em 0;
+    width: 50%;
+
+    &:hover {
+      color: $brand-color;
+    }
+  }
+
+  .prev-none {
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .next {
+    text-align: right;
+  }
+}
+
 .tags {
   background: $grey-color-light;
   color: $grey-color;
