@@ -210,6 +210,16 @@ header > .wrapper a {
     // }
 }
 
+.share-button {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3em;
+
+  .twitter-share-button, .fb-share-button {
+    margin-right: .5em;
+  }
+}
+
 .page-navigation {
   display: flex;
   font-size: 14px;
