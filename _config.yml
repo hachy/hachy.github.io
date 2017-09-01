@@ -6,6 +6,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://hachy.github.io" # the base hostname & protocol for your site
 twitter_username: hachy01
 github_username:  hachy
+lang: ja_JP
 
 plugins:
   - jekyll-avatar
