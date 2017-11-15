@@ -2,6 +2,7 @@
 layout: post
 title: Unity2dの衝突判定
 tags: Unity2d
+image: images/collision2d.png
 requirements:
 - Unity version - 2017.1.1
 - JavaScriptを使用
