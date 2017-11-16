@@ -124,23 +124,25 @@ blockquote {
  */
 pre,
 code {
-    font-size: 15px;
-    background-color: $code-bg;
+  font-size: 15px;
 }
 
 code {
-    padding: 1px 5px;
+  background: $code-bg;
+  padding: .2em .4em;
 }
 
 pre {
-    padding: 8px 12px;
-    overflow-x: auto;
+  background: $code-bg2;
+  padding: 16px;
+  overflow-x: auto;
 
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
+  > code {
+    background: inherit;
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
 }
 
 
