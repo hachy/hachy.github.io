@@ -263,13 +263,18 @@ header > .wrapper a {
   color: $grey-color-dark;
   font-size: $small-font-size;
   margin: 2em 0 3em;
+  padding-top: 1.4em;
+  position: relative;
 
-  .title {
+  ::before {
+    content: "動作環境";
+    position: absolute;
+    top: 0;
+    left: 0;
     background: #dcdcdc;
-    border-bottom-right-radius: 50em;
     color: $grey-color;
-    font-size: 13px;
-    padding: .3em 2em .3em 1em;
+    font-size: .75rem;
+    padding: .1em 1em .1em 1em;
   }
 
   .list {
