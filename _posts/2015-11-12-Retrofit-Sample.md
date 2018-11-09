@@ -10,22 +10,19 @@ GitHubのAPIを使って`hachy`というユーザーのリポジトリ一覧をL
 
 AndroidManifest.xml にpermissionを追加
 
-```xml
+```xml:AndroidManifest.xml
 <uses-permission android:name="android.permission.INTERNET"/>
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 ```
 
 build.gradle の dependencies に追加
 
-```
+```gradle:build.gradle
 compile 'com.squareup.retrofit:retrofit:2.0.0-beta2'
 compile 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
 ```
 
-
-GitHubService.java
-
-```java
+```java:GitHubService.java
 package com.example.retrofitsample;
 
 import java.util.List;
@@ -40,9 +37,7 @@ public interface GitHubService {
 }
 ```
 
-Repo.java
-
-```java
+```java:Repo.java
 package com.example.retrofitsample;
 
 public class Repo {
@@ -58,9 +53,7 @@ public class Repo {
 }
 ```
 
-MainActivity.java
-
-```java
+```java:MainActivity.java
 package com.example.retrofitsample;
 
 import android.os.Bundle;

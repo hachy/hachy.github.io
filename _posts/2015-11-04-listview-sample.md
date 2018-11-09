@@ -4,9 +4,8 @@ title: "とりあえずListViewを使う"
 date: 2015-11-04 10:31:58 +0900
 tags: android
 ---
-`layout/activity_main.xml`
 
-```xml
+```xml:layout/activity_main.xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -22,7 +21,7 @@ tags: android
 
 `MainActivity.java` ではデータをArrayAdapter経由でListViewに表示します。
 
-```java
+```java:MainActivity.java
 package com.example.listviewsample;
 
 import android.os.Bundle;
@@ -57,9 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
 `android.R.layout.simple_list_item_1` はAndroid側で用意されているレイアウトファイルで以下のように定義されている。ちなみにAndroidStudioでは`Shift`を２回押すと検索することができる。
 
-`simple_list_item_1.xml`
-
-```xml
+```xml:simple_list_item_1.xml
 <?xml version="1.0" encoding="utf-8"?>
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@android:id/text1"
