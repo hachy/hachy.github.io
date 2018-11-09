@@ -17,11 +17,11 @@ Webpacker は JavaScript だけを管理して css や画像は従来通り Spro
 
 Gemfile に `webpacker` を追加してインストールします。
 
-```ruby
+```ruby:Gemfile
 gem 'webpacker'
 ```
 
-```bash
+```shell
 bundle
 bin/rails webpacker:install
 ```
@@ -52,9 +52,7 @@ app/javascript:
 
 `app/javascript/packs/application.js` をエントリーファイルとして Javascript や CSS ファイルをインポートします。
 
-app/javascript/packs/application.js
-
-```javascript
+```javascript:app/javascript/packs/application.js
 import '../javascripts/application';
 import '../stylesheets/application';
 
@@ -68,10 +66,7 @@ views の head タグの中を変更します。
 `stylesheet_link_tag` `javascript_include_tag` は削除します。
 （削除せずに併用することもできます）
 
-
-app/views/layouts/application.html.erb
-
-```erb
+```erb:app/views/layouts/application.html.erb
 <%= javascript_pack_tag 'application' %>
 <%= stylesheet_pack_tag 'application' %>
 ```
@@ -95,13 +90,11 @@ app/views/layouts/application.html.erb
 Asset pipeline を使っている場合は `//= require rails-ujs` でしたが、
 Webpacker を使う場合は `yarn add` して以下のようにします。
 
-```bash
+```shell
 yarn add rails-ujs
 ```
 
-app/javascript/javascripts/application.js
-
-```javascript
+```javascript:app/javascript/javascripts/application.js
 import Rails from 'rails-ujs';
 
 Rails.start();
@@ -111,13 +104,11 @@ Rails.start();
 
 jQuery は Yarn でインストールしたら `config/webpack/environment.js` を以下のように編集すると使えるようになります。
 
-```bash
+```shell
 yarn add jquery
 ```
 
-config/webpack/environment.js
-
-```javascript
+```javascript:config/webpack/environment.js
 const { environment } = require('@rails/webpacker');
 const webpack = require('webpack');
 
