@@ -8,6 +8,11 @@ twitter_username: hachy01
 github_username:  hachy
 lang: ja_JP
 
+markdown: kramdown
+kramdown:
+   syntax_highlighter_opts:
+      disable : true
+
 plugins:
   - jekyll-avatar
   - jekyll-feed
