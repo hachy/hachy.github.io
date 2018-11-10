@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Macのメニューバーやツールバーの透明度を下げる
+tags: Mac
+image: images/reduce-transparency-0.gif
 requirements:
   - macOS Mojave version 10.14
 ---
