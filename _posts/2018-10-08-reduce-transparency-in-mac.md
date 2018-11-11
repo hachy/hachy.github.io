@@ -2,7 +2,7 @@
 layout: post
 title: Macのメニューバーやツールバーの透明度を下げる
 tags: Mac
-image: images/reduce-transparency-0.gif
+image: assets/images/reduce-transparency-0.gif
 requirements:
   - macOS Mojave version 10.14
 ---
@@ -10,7 +10,7 @@ requirements:
 Safari のツールバー・お気に入りバーや、Finder のツールバー・サイドバー、Mac のメニューバー等はデフォルトで半透明になっている。
 
 (分かりづらいけどこんな感じ ↓)
-![safari toolbar](/images/reduce-transparency-0.gif 'safari toolbar')
+![safari toolbar](/assets/images/reduce-transparency-0.gif 'safari toolbar')
 
 一見クールだが、個人的に Safari のウィンドウ上部が半透明だと見にくくなることが多い。
 
@@ -18,11 +18,11 @@ Safari のツールバー・お気に入りバーや、Finder のツールバー
 
 Mac のメニューバーから `システム環境設定` をオープンし `アクセシビリティ` をクリック。
 
-![システム環境設定](/images/reduce-transparency-1.png 'システム環境設定'){:width="500px"}
+![システム環境設定](/assets/images/reduce-transparency-1.png 'システム環境設定'){:width="500px"}
 
 アクセシビリティの `ディスプレイ` を選択してから `透明度を下げる` にチェックを入れる。
 
-![アクセシビリティ](/images/reduce-transparency-2.png 'アクセシビリティ'){:width="500px"}
+![アクセシビリティ](/assets/images/reduce-transparency-2.png 'アクセシビリティ'){:width="500px"}
 
 以上で透明度が下がって見やすくなっているはず！
 

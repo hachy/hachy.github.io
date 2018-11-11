@@ -2,7 +2,7 @@
 layout: post
 title: Unity2dの衝突判定
 tags: Unity2d
-image: images/collision2d.png
+image: assets/images/collision2d.png
 requirements:
 - Unity version - 2017.1.1
 - JavaScriptを使用
@@ -14,7 +14,7 @@ OnCollisionEnter2D を使う場合と OnTriggerEnter2D を使う場合の２つ�
 
 以下のように Sphere と Cube を用意します。
 
-![collision2d](/images/collision2d.png "collision2d"){:width="100px"}
+![collision2d](/assets/images/collision2d.png "collision2d"){:width="100px"}
 
 
 ## OnCollisionEnter2D を使う場合
@@ -46,7 +46,7 @@ OnTriggerEnter2D の使い所は、衝突判定はしつつも物体同士はす
 
 Component の追加は上記の OnCollisionEnter2D と同じですが、物体の少なくともどちらか一方の Box Collider 2D の**Is Trigger にチェックを入れ**てください。
 
-![Is Trigger](/images/is_trigger.png "is_trigger"){:width="300px"}
+![Is Trigger](/assets/images/is_trigger.png "is_trigger"){:width="300px"}
 
 
 そして JavaScript は以下のように書き換えます。

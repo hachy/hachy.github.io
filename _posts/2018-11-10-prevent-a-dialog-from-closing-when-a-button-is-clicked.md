@@ -2,7 +2,7 @@
 layout: post
 title: ボタンをタップした時ダイアログが閉じないようにする
 tags: android
-image: images/dialogfragment.png
+image: assets/images/dialogfragment.png
 ---
 
 AndroidのダイアログはEditTextの値が有効か無効かに関わらずボタンを押した時に閉じてしまいます。
@@ -11,7 +11,7 @@ AndroidのダイアログはEditTextの値が有効か無効かに関わらず�
 
 この記事では、ボタンが押された時に勝手にダイアログが閉じないようにするやり方を紹介します。
 
-![Dialog](/images/dialogfragment.png "Dialog")
+![Dialog](/assets/images/dialogfragment.png "Dialog")
 
 ## とりあえずダイアログを表示する
 

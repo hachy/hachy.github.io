@@ -2,14 +2,14 @@
 layout: post
 title: Unity のカスタムフォントで数字を表示する
 tags: Unity
-image: images/myfont.gif
+image: assets/images/myfont.gif
 requirements:
 - Unity version - 2017.3.1f1
 ---
 
 こういうやつをつくる
 
-![MyFont gif](/images/myfont.gif "MyFont gif")
+![MyFont gif](/assets/images/myfont.gif "MyFont gif")
 
 やり方としては、まず自前のテクスチャでマテリアルを作成する。
 
@@ -19,7 +19,7 @@ requirements:
 
 今回は例として以下の `128*64` のテクスチャを用意する
 
-![MyFont](/images/myfont.png "MyFont")
+![MyFont](/assets/images/myfont.png "MyFont")
 
 <br />
 
@@ -29,7 +29,7 @@ Unity にインポートして
 
 - Max Size は128 にして Apply
 
-![MyFont texture](/images/myfont-texture.png "MyFont texture"){:width="500px"}
+![MyFont texture](/assets/images/myfont-texture.png "MyFont texture"){:width="500px"}
 
 
 <br />
@@ -40,7 +40,7 @@ ProjectでCreate -> Material でマテリアルを作成
 
 - 上記のテクスチャを適用
 
-![MyFont material](/images/myfont-material.png "MyFont material"){:width="500px"}
+![MyFont material](/assets/images/myfont-material.png "MyFont material"){:width="500px"}
 
 ## カスタムフォントを作成
 
@@ -58,13 +58,13 @@ Assets -> Create -> Custom Font でカスタムフォントを作成
 
 <ul style="display: flex; justify-content: flex-start; list-style-type: none; margin-left: 0px;">
 <li>
-<img src="/images/myfont-inspector-1.png" alt="MyFont inspector 1" title="MyFont inspector 1">
+<img src="/assets/images/myfont-inspector-1.png" alt="MyFont inspector 1" title="MyFont inspector 1">
 </li>
 <li style="padding-left: 10px;">
-<img src="/images/myfont-inspector-2.png" alt="MyFont inspector 2" title="MyFont inspector 2">
+<img src="/assets/images/myfont-inspector-2.png" alt="MyFont inspector 2" title="MyFont inspector 2">
 </li>
 <li style="padding-left: 10px;">
-<img src="/images/myfont-inspector-3.png" alt="MyFont inspector 3" title="MyFont inspector 3">
+<img src="/assets/images/myfont-inspector-3.png" alt="MyFont inspector 3" title="MyFont inspector 3">
 </li>
 </ul>
 
