@@ -13,6 +13,10 @@ kramdown:
    syntax_highlighter_opts:
       disable : true
 
+sass:
+  sass_dir: assets/_sass
+  style: compressed
+
 plugins:
   - jekyll-avatar
   - jekyll-feed

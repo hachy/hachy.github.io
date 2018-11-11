@@ -71,4 +71,4 @@ public class MainActivity extends AppCompatActivity {
 
 結果はこんな感じ。
 
-![listview](/images/listview1.png "listview")
+![listview](/assets/images/listview1.png "listview")

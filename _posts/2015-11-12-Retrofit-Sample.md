@@ -113,4 +113,4 @@ public class MainActivity extends AppCompatActivity {
 
 リポジトリ一覧が表示された。
 
-![listview](/images/retrofit-sample.png "Retrofit-sample")
+![listview](/assets/images/retrofit-sample.png "Retrofit-sample")
