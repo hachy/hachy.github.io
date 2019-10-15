@@ -3,12 +3,12 @@ header > .wrapper a {
 }
 
 .site-title {
-  font-size: 26px;
+  float: left;
+  margin-bottom: 0;
   font-weight: 800;
+  font-size: 26px;
   line-height: 56px;
   letter-spacing: -1px;
-  margin-bottom: 0;
-  float: left;
 
   &,
   &:visited {
@@ -21,8 +21,8 @@ header > .wrapper a {
 }
 
 .site-nav {
-  font-weight: 800;
   float: right;
+  font-weight: 800;
   line-height: 56px;
 
   .menu-icon {
@@ -47,18 +47,18 @@ header > .wrapper a {
     position: absolute;
     top: 9px;
     right: $spacing-unit / 2;
+    text-align: right;
     background-color: $background-color;
     border: 1px solid $grey-color-light;
     border-radius: 5px;
-    text-align: right;
 
     .menu-icon {
       display: block;
       float: right;
       width: 36px;
       height: 26px;
-      line-height: 0;
       padding-top: 10px;
+      line-height: 0;
       text-align: center;
 
       > svg {
@@ -72,8 +72,8 @@ header > .wrapper a {
     }
 
     .trigger {
-      clear: both;
       display: none;
+      clear: both;
     }
 
     &:hover .trigger {
@@ -83,19 +83,19 @@ header > .wrapper a {
 
     .page-link {
       display: block;
+      margin-left: 20px;
       padding: 5px 10px;
 
       &:not(:last-child) {
         margin-right: 0;
       }
-      margin-left: 20px;
     }
   }
 }
 
 .site-footer {
-  border-top: 1px solid $grey-color-light;
   padding: $spacing-unit 0;
+  border-top: 1px solid $grey-color-light;
 
   > .wrapper {
     display: flex;
@@ -115,12 +115,12 @@ header > .wrapper a {
 }
 
 .social-media-list {
-  color: $grey-color;
   display: flex;
+  margin-bottom: 0;
+  margin-left: 0;
+  color: $grey-color;
   font-size: 13px;
   list-style: none;
-  margin-left: 0;
-  margin-bottom: 0;
 
   li {
     padding-right: 8px;
@@ -153,8 +153,8 @@ header > .wrapper a {
 }
 
 .post-meta {
-  font-size: $small-font-size;
   color: $grey-color;
+  font-size: $small-font-size;
 }
 
 .post-link {
@@ -171,8 +171,8 @@ header > .wrapper a {
 
 .post-title {
   font-size: 28px;
-  letter-spacing: -1px;
   line-height: 1;
+  letter-spacing: -1px;
 
   @include media-query($on-laptop) {
     font-size: 24px;
@@ -183,10 +183,10 @@ header > .wrapper a {
   margin-bottom: $spacing-unit;
 
   h2 {
-    border-bottom: 0.1em solid $grey-color-light;
-    font-size: 18px;
-    font-weight: 600;
     margin-top: 3em;
+    font-weight: 600;
+    font-size: 18px;
+    border-bottom: 0.1em solid $grey-color-light;
 
     @include media-query($on-laptop) {
       font-size: 16px;
@@ -194,8 +194,8 @@ header > .wrapper a {
   }
 
   h3 {
-    font-size: 16px;
     font-weight: 600;
+    font-size: 16px;
 
     @include media-query($on-laptop) {
       font-size: 16px;
@@ -203,10 +203,10 @@ header > .wrapper a {
   }
 
   h6 {
-    border-bottom: 0.1em solid $grey-color-light;
-    font-size: 16px;
-    font-weight: 600;
     margin-top: 3em;
+    font-weight: 600;
+    font-size: 16px;
+    border-bottom: 0.1em solid $grey-color-light;
 
     @include media-query($on-laptop) {
       font-size: 16px;
@@ -227,15 +227,15 @@ header > .wrapper a {
 
 .page-navigation {
   display: flex;
-  font-size: 14px;
   justify-content: space-between;
   width: auto;
+  font-size: 14px;
 
   a {
-    color: $grey-color-dark;
     display: block;
-    margin: 2em 0 1em 0;
     width: 50%;
+    margin: 2em 0 1em 0;
+    color: $grey-color-dark;
 
     &:hover {
       color: $brand-color;
@@ -253,45 +253,45 @@ header > .wrapper a {
 }
 
 .tags {
-  background: $grey-color-light;
-  color: $grey-color;
-  font-size: $small-font-size;
   margin-left: 7px;
   padding: 3px 5px;
+  color: $grey-color;
+  font-size: $small-font-size;
+  background: $grey-color-light;
 }
 
 .requirements {
-  background: $code-bg;
-  color: $grey-color-dark;
-  font-size: $small-font-size;
+  position: relative;
   margin: 2em 0 3em;
   padding-top: 1.4em;
-  position: relative;
+  color: $grey-color-dark;
+  font-size: $small-font-size;
+  background: $code-bg;
 
   ::before {
-    content: '動作環境';
     position: absolute;
     top: 0;
     left: 0;
-    background: #dcdcdc;
+    padding: 0.1em 1em 0.1em 1em;
     color: $grey-color;
     font-size: 0.75rem;
-    padding: 0.1em 1em 0.1em 1em;
+    background: #dcdcdc;
+    content: '動作環境';
   }
 
   .list {
-    list-style: none;
     margin: 0;
     padding: 0.5em 1.5em;
+    list-style: none;
   }
 }
 
 .info {
-  background: #fafbfc;
-  border-radius: 3px;
-  border: 1px #e1e4e8 solid;
   margin: 30px 0;
   padding: 8px 16px;
+  background: #fafbfc;
+  border: 1px #e1e4e8 solid;
+  border-radius: 3px;
 }
 
 .code-block-header {
@@ -299,16 +299,16 @@ header > .wrapper a {
   padding-top: 32px;
 
   &::before {
-    content: attr(data-lang);
-    background: darken(#f6f8fa, 8%);
-    color: darken(#f6f8fa, 50%);
-    display: block;
-    font-size: 13px;
-    font-weight: 700;
-    padding: 1px 10px;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 10;
+    display: block;
+    padding: 1px 10px;
+    color: darken(#f6f8fa, 50%);
+    font-weight: 700;
+    font-size: 13px;
+    background: darken(#f6f8fa, 8%);
+    content: attr(data-lang);
   }
 }

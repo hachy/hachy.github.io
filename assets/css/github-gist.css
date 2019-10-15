@@ -5,10 +5,10 @@
 
 .hljs {
   display: block;
-  background: #f6f8fa;
   padding: 0.5em;
-  color: #333333;
   overflow-x: auto;
+  color: #333333;
+  background: #f6f8fa;
 }
 
 .hljs-comment,
