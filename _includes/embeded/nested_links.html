@@ -1,0 +1,50 @@
+<style>
+  .nested-links {
+    position: relative;
+    pointer-events: all;
+  }
+  .nested-links .stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: '';
+  }
+  .nested-links .inner-links {
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+  }
+  .inner-links a {
+    pointer-events: all;
+  }
+  .nested-links.box {
+    background: white;
+    border: 1px solid #000;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .nested-links.box:hover {
+    z-index: 1;
+    color: #495057;
+    text-decoration: none;
+    background-color: #f8f9fa;
+  }
+  .nested-links a {
+    color: #41baea;
+    text-decoration: none;
+  }
+  .nested-links a:hover,
+  .nested-links a:focus {
+    text-decoration: underline;
+  }
+</style>
+
+<div class="nested-links box">
+  <a href="#outer" class="stretched-link">Outer link</a>
+  <div class="inner-links">
+    <a href="#inner">Inner link</a>
+  </div>
+</div>
