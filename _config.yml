@@ -1,17 +1,17 @@
 title: Hachy
 author: hachy
 description: > # this means to ignore newlines until "baseurl:"
-  Android/Ruby on Rails/Unity
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "https://hachy.github.io" # the base hostname & protocol for your site
+  I write code for fun.
+baseurl: '' # the subpath of your site, e.g. /blog/
+url: 'https://hachy.github.io' # the base hostname & protocol for your site
 twitter_username: hachy01
-github_username:  hachy
+github_username: hachy
 lang: ja_JP
 
 markdown: kramdown
 kramdown:
-   syntax_highlighter_opts:
-      disable : true
+  syntax_highlighter_opts:
+    disable: true
 
 sass:
   sass_dir: assets/_sass
